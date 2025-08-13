@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="10. specificity.css">
+    <title>Specificity</title>
+    <style>
+        .favourite{
+            color: blue;
+            font-weight: bold;
+        }
+        ul.Summer-Drinks li{
+            font-size: 15px;
+            color: blueviolet;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <ul class="Summer-Drinks">
+        <li>Mountain Dew</li>
+        <li class="favourite">Apple Fizz</li>
+        <li>7-up</li>
+    </ul>
+</body>
+</html>
