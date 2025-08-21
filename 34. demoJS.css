@@ -1,0 +1,10 @@
+button{
+    margin: 20px;
+    padding: 20px;
+    background-color: yellowgreen;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 30px;
+}
