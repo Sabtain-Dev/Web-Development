@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    <style>
+        /* styles.css */
+
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        /* Section styles */
+        .section {
+            box-sizing: border-box;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 20px;
+            background-color: #fff;
+            position:relative;
+        }
+
+        .section-title {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #333;
+            color: white;
+            padding: 5px 10px;
+        }
+
+        /* Responsive layout */
+        @media screen and (min-width: 992px) {
+            .desktop.section {
+                width: 31%;
+                float: left;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            .section {
+                width: 48%;
+            }
+
+            .section:nth-child(4) {
+                width: 100%;
+                clear: both;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .section {
+                width: 88%;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Page</h1>
+    </header>
+    <section class="section desktop">
+        <div class="section-title">Chicken</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi blanditiis eius nisi corrupti beatae voluptatem asperiores repellat rerum nostrum, ea ipsum ratione perferendis aperiam obcaecati recusandae consequuntur ab iste. Quo!</p>
+    </section>
+    <section class="section desktop">
+        <div class="section-title">Beef</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi blanditiis eius nisi corrupti beatae voluptatem asperiores repellat rerum nostrum, ea ipsum ratione perferendis aperiam obcaecati recusandae consequuntur ab iste. Quo!</p>
+    </section>
+    <section class="section desktop">
+        <div class="section-title">Sushi</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi blanditiis eius nisi corrupti beatae voluptatem asperiores repellat rerum nostrum, ea ipsum ratione perferendis aperiam obcaecati recusandae consequuntur ab iste. Quo!</p>
+    </section>
+</body>
+</html>
