@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-website",
+  "description": "build-and-deploy-your-portfolio-website",
+  "scripts": {
+    "start": "",
+    "dev": "",
+    "build": "",
+    "preview": ""
+  },
+  "dependencies": {
+    "vite": ""
+  },
+  "devDependencies": {}
+}
